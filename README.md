@@ -1,149 +1,126 @@
-**This GitHub repo (<https://github.com/Genymobile/scrcpy>) is the only official
-source for the project. Do not download releases from random websites, even if
-their name contains `scrcpy`.**
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此 GitHub 存储库 ( </font></font><a href="https://github.com/Genymobile/scrcpy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://github.com/Genymobile/scrcpy</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ) 是该项目的唯一官方来源。</font><font style="vertical-align: inherit;">不要从随机网站下载版本，即使它们的名称包含</font></font><code>scrcpy</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></strong></p>
+<h1 tabindex="-1" dir="auto"><a id="user-content-scrcpy-v231" class="anchor" aria-hidden="true" tabindex="-1" href="#scrcpy-v231"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">scrcpy（v2.3.1）</font></font></h1>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/Genymobile/scrcpy/blob/master/app/data/icon.svg"><img src="/Genymobile/scrcpy/raw/master/app/data/icon.svg" width="128" height="128" alt="scrcpy" align="right" style="max-width: 100%;"></a></p>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发音</font><font style="vertical-align: inherit;">为“ </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">scr</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> een </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">co</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> py </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">”</font></font></strong><font style="vertical-align: inherit;"></font></em></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该应用程序镜像通过 USB 或</font></font><a href="/Genymobile/scrcpy/blob/master/doc/connection.md#tcpip-wireless"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TCP/IP</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">连接的 Android 设备（视频和音频） ，并允许使用计算机的键盘和鼠标控制设备。</font><font style="vertical-align: inherit;">它不需要任何
+</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">访问权限。</font><font style="vertical-align: inherit;">它适用于</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Linux</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Windows</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">macOS</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/Genymobile/scrcpy/blob/master/assets/screenshot-debian-600.jpg"><img src="/Genymobile/scrcpy/raw/master/assets/screenshot-debian-600.jpg" alt="截屏" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它的重点是：</font></font></p>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lightness</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：本机，仅显示设备屏幕</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">性能</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：30~120fps，取决于设备</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">画质</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：1920×1080以上</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">低延迟</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><a href="https://github.com/Genymobile/scrcpy/pull/646" data-hovercard-type="pull_request" data-hovercard-url="/Genymobile/scrcpy/pull/646/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">35~70ms</font></font></a></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启动时间短</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：约 1 秒即可显示第一张图像</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">非侵入性</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：Android 设备上没有安装任何内容</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户优势</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：无需帐户、无广告、无需互联网</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自由</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：自由和开源软件</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其特点包括：</font></font></p>
+<ul dir="auto">
+<li><a href="/Genymobile/scrcpy/blob/master/doc/audio.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">音频转发</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（Android 11+）</font></font></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/recording.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">记录</font></font></a></li>
+<li><font style="vertical-align: inherit;"><a href="/Genymobile/scrcpy/blob/master/doc/device.md#turn-screen-off"><font style="vertical-align: inherit;">Android 设备屏幕关闭时</font></a><font style="vertical-align: inherit;">进行镜像</font></font><a href="/Genymobile/scrcpy/blob/master/doc/device.md#turn-screen-off"><font style="vertical-align: inherit;"></font></a></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/control.md#copy-paste"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">双向复制</font><a href="/Genymobile/scrcpy/blob/master/doc/control.md#copy-paste"><font style="vertical-align: inherit;">粘贴</font></a></font></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/video.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可配置的质量</font></font></a></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/camera.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相机镜像</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（Android 12+）</font></font></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/v4l2.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">镜像为网络摄像头 (V4L2)</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（仅限 Linux）</font></font></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/hid-otg.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">物理键盘/鼠标模拟 (HID)</font></font></a></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/hid-otg.md#otg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OTG模式</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和更多…</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-prerequisites" class="anchor" aria-hidden="true" tabindex="-1" href="#prerequisites"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">先决条件</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Android 设备至少需要 API 21 (Android 5.0)。</font></font></p>
+<p dir="auto"><a href="/Genymobile/scrcpy/blob/master/doc/audio.md"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">API &gt;= 30 (Android 11+) 支持</font><a href="/Genymobile/scrcpy/blob/master/doc/audio.md"><font style="vertical-align: inherit;">音频转发。</font></a></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">确保您</font><font style="vertical-align: inherit;">在设备上</font></font><a href="https://developer.android.com/studio/debug/dev-options#enable" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启用了 USB 调试。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在某些设备上，您还需要启用</font></font><a href="https://github.com/Genymobile/scrcpy/issues/70#issuecomment-373286323" data-hovercard-type="issue" data-hovercard-url="/Genymobile/scrcpy/issues/70/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">附加选项</font></font></a> <code>USB debugging (Security Settings)</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（与 不同的项目</font></font><code>USB debugging</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）以使用键盘和鼠标进行控制。</font><font style="vertical-align: inherit;">设置此选项后，需要重新启动设备。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="/Genymobile/scrcpy/blob/master/doc/hid-otg.md#otg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请注意，在OTG 模式</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下运行 scrcpy 不需要 USB 调试</font><font style="vertical-align: inherit;">。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-get-the-app" class="anchor" aria-hidden="true" tabindex="-1" href="#get-the-app"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载这个软件</font></font></h2>
+<ul dir="auto">
+<li><a href="/Genymobile/scrcpy/blob/master/doc/linux.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Linux</font></font></a></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/windows.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">视窗</font></font></a></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/macos.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">苹果系统</font></font></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-user-documentation" class="anchor" aria-hidden="true" tabindex="-1" href="#user-documentation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户文档</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该应用程序提供了很多功能和配置选项。</font><font style="vertical-align: inherit;">它们记录在以下页面中：</font></font></p>
+<ul dir="auto">
+<li><a href="/Genymobile/scrcpy/blob/master/doc/connection.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">联系</font></font></a></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/video.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">视频</font></font></a></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/audio.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">声音的</font></font></a></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/control.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">控制</font></font></a></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/device.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设备</font></font></a></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/window.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">窗户</font></font></a></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/recording.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">记录</font></font></a></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/tunnels.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">隧道</font></font></a></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/hid-otg.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HID/OTG</font></font></a></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/camera.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相机</font></font></a></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/v4l2.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Video4Linux</font></font></a></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/shortcuts.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快捷方式</font></font></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-resources" class="anchor" aria-hidden="true" tabindex="-1" href="#resources"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">资源</font></font></h2>
+<ul dir="auto">
+<li><a href="/Genymobile/scrcpy/blob/master/FAQ.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">常问问题</font></font></a></li>
+<li><a href="https://github.com/Genymobile/scrcpy/wiki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">翻译</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（不一定是最新的）</font></font></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/build.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建说明</font></font></a></li>
+<li><a href="/Genymobile/scrcpy/blob/master/doc/develop.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发商</font></font></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-articles" class="anchor" aria-hidden="true" tabindex="-1" href="#articles"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文章</font></font></h2>
+<ul dir="auto">
+<li><a href="https://blog.rom1v.com/2018/03/introducing-scrcpy/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">介绍 scpy</font></font></a></li>
+<li><a href="https://www.genymotion.com/blog/open-source-project-scrcpy-now-works-wirelessly/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Scrcpy 现在可以无线工作</font></font></a></li>
+<li><a href="https://blog.rom1v.com/2023/03/scrcpy-2-0-with-audio/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Scrcpy 2.0，带音频</font></font></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-contact" class="anchor" aria-hidden="true" tabindex="-1" href="#contact"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">接触</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您遇到错误，请先阅读</font></font><a href="/Genymobile/scrcpy/blob/master/FAQ.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">常见问题解答</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，然后提出</font></font><a href="https://github.com/Genymobile/scrcpy/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问题</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于一般问题或讨论，您还可以使用：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">红迪网：</font></font><a href="https://www.reddit.com/r/scrcpy" rel="nofollow"><code>r/scrcpy</code></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">推特：</font></font><a href="https://twitter.com/scrcpy_app" rel="nofollow"><code>@scrcpy_app</code></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-donate" class="anchor" aria-hidden="true" tabindex="-1" href="#donate"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">捐</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我是</font></font><a href="https://github.com/rom1v"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@rom1v ， </font></font></a><font style="vertical-align: inherit;"></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">scrcpy</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的作者和维护者</font><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您喜欢这个应用程序，您可以</font></font><a href="https://blog.rom1v.com/about/#support-my-open-source-work" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持我的开源工作</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<ul dir="auto">
+<li><a href="https://github.com/sponsors/rom1v"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub 赞助商</font></font></a></li>
+<li><a href="https://liberapay.com/rom1v/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自由支付</font></font></a></li>
+<li><a href="https://paypal.me/rom2v" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贝宝</font></font></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-licence" class="anchor" aria-hidden="true" tabindex="-1" href="#licence"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></h2>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>Copyright (C) 2018 Genymobile
+Copyright (C) 2018-2023 Romain Vimont
 
-# scrcpy (v2.3.1)
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-<img src="app/data/icon.svg" width="128" height="128" alt="scrcpy" align="right" />
+    http://www.apache.org/licenses/LICENSE-2.0
 
-_pronounced "**scr**een **c**o**py**"_
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="Copyright (C) 2018 Genymobile
+Copyright (C) 2018-2023 Romain Vimont
 
-This application mirrors Android devices (video and audio) connected via
-USB or [over TCP/IP](doc/connection.md#tcpip-wireless), and allows to control the
-device with the keyboard and the mouse of the computer. It does not require any
-_root_ access. It works on _Linux_, _Windows_ and _macOS_.
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-![screenshot](assets/screenshot-debian-600.jpg)
+    http://www.apache.org/licenses/LICENSE-2.0
 
-It focuses on:
-
- - **lightness**: native, displays only the device screen
- - **performance**: 30~120fps, depending on the device
- - **quality**: 1920×1080 or above
- - **low latency**: [35~70ms][lowlatency]
- - **low startup time**: ~1 second to display the first image
- - **non-intrusiveness**: nothing is left installed on the Android device
- - **user benefits**: no account, no ads, no internet required
- - **freedom**: free and open source software
-
-[lowlatency]: https://github.com/Genymobile/scrcpy/pull/646
-
-Its features include:
- - [audio forwarding](doc/audio.md) (Android 11+)
- - [recording](doc/recording.md)
- - mirroring with [Android device screen off](doc/device.md#turn-screen-off)
- - [copy-paste](doc/control.md#copy-paste) in both directions
- - [configurable quality](doc/video.md)
- - [camera mirroring](doc/camera.md) (Android 12+)
- - [mirroring as a webcam (V4L2)](doc/v4l2.md) (Linux-only)
- - [physical keyboard/mouse simulation (HID)](doc/hid-otg.md)
- - [OTG mode](doc/hid-otg.md#otg)
- - and more…
-
-## Prerequisites
-
-The Android device requires at least API 21 (Android 5.0).
-
-[Audio forwarding](doc/audio.md) is supported for API >= 30 (Android 11+).
-
-Make sure you [enabled USB debugging][enable-adb] on your device(s).
-
-[enable-adb]: https://developer.android.com/studio/debug/dev-options#enable
-
-On some devices, you also need to enable [an additional option][control] `USB
-debugging (Security Settings)` (this is an item different from `USB debugging`)
-to control it using a keyboard and mouse. Rebooting the device is necessary once
-this option is set.
-
-[control]: https://github.com/Genymobile/scrcpy/issues/70#issuecomment-373286323
-
-Note that USB debugging is not required to run scrcpy in [OTG
-mode](doc/hid-otg.md#otg).
-
-
-## Get the app
-
- - [Linux](doc/linux.md)
- - [Windows](doc/windows.md)
- - [macOS](doc/macos.md)
-
-
-## User documentation
-
-The application provides a lot of features and configuration options. They are
-documented in the following pages:
-
- - [Connection](doc/connection.md)
- - [Video](doc/video.md)
- - [Audio](doc/audio.md)
- - [Control](doc/control.md)
- - [Device](doc/device.md)
- - [Window](doc/window.md)
- - [Recording](doc/recording.md)
- - [Tunnels](doc/tunnels.md)
- - [HID/OTG](doc/hid-otg.md)
- - [Camera](doc/camera.md)
- - [Video4Linux](doc/v4l2.md)
- - [Shortcuts](doc/shortcuts.md)
-
-
-## Resources
-
- - [FAQ](FAQ.md)
- - [Translations][wiki] (not necessarily up to date)
- - [Build instructions](doc/build.md)
- - [Developers](doc/develop.md)
-
-[wiki]: https://github.com/Genymobile/scrcpy/wiki
-
-
-## Articles
-
-- [Introducing scrcpy][article-intro]
-- [Scrcpy now works wirelessly][article-tcpip]
-- [Scrcpy 2.0, with audio][article-scrcpy2]
-
-[article-intro]: https://blog.rom1v.com/2018/03/introducing-scrcpy/
-[article-tcpip]: https://www.genymotion.com/blog/open-source-project-scrcpy-now-works-wirelessly/
-[article-scrcpy2]: https://blog.rom1v.com/2023/03/scrcpy-2-0-with-audio/
-
-## Contact
-
-If you encounter a bug, please read the [FAQ](FAQ.md) first, then open an [issue].
-
-[issue]: https://github.com/Genymobile/scrcpy/issues
-
-For general questions or discussions, you can also use:
-
- - Reddit: [`r/scrcpy`](https://www.reddit.com/r/scrcpy)
- - Twitter: [`@scrcpy_app`](https://twitter.com/scrcpy_app)
-
-
-## Donate
-
-I'm [@rom1v](https://github.com/rom1v), the author and maintainer of _scrcpy_.
-
-If you appreciate this application, you can [support my open source
-work][donate]:
- - [GitHub Sponsors](https://github.com/sponsors/rom1v)
- - [Liberapay](https://liberapay.com/rom1v/)
- - [PayPal](https://paypal.me/rom2v)
-
-[donate]: https://blog.rom1v.com/about/#support-my-open-source-work
-
-## Licence
-
-    Copyright (C) 2018 Genymobile
-    Copyright (C) 2018-2023 Romain Vimont
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License." tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+</article></div>
